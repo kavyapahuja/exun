@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NeuroNova | Waitlist</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="navbar">
+<div class="logo">NeuroNova</div>
+<nav>
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="waitlist.html" class="active">Waitlist</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="tech.html">Tech</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="waitlist-container">
+
+  <!-- AUTH FORM (shown if NOT logged in) -->
+  <div class="waitlist-content" id="auth-section">
+    <h1><span id="form-title">Join</span> Our Waitlist Now</h1>
+    <p id="form-subtitle">Be the first to know when we launch. Sign up to join!</p>
+
+    <form id="waitlist-form">
+      <input type="text" id="name" name="name" placeholder="Name" required />
+      <input type="email" id="email" name="email" placeholder="Email" required />
+      <input type="password" id="password" name="password" placeholder="Password" required />
+
+      <div class="radio-group">
+        <input type="radio" id="agree" name="updates" required />
+        <label for="agree">I agree to receive updates</label>
+      </div>
+
+      <button type="submit" class="yellow-btn" id="submit-btn">Join Waitlist</button>
+      <p id="form-error" style="color:red;"></p>
+    </form>
+
+    <p>
+      <span id="toggle-text">Already have an account?</span>
+      <a href="#" id="toggle-link">Log in</a>
+    </p>
+  </div>
+
+  <!-- WAITLIST CONTENT (shown if logged in) -->
+  <div class="waitlist-content" id="member-section" style="display:none;">
+    <h1>You're <span>In!</span></h1>
+    <p id="welcome-message">Welcome back!</p>
+    <p>Thanks for joining the NeuroNova waitlist. We'll notify you as soon as we launch.</p>
+    <button class="yellow-btn" id="logout-btn">Log Out</button>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

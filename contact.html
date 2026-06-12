@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroNova | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">NeuroNova</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="waitlist.html">Waitlist</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="tech.html">Tech</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Get in touch with us</h1>
+    <p class="subtext">
+      Got a question? You can send us your query through the form below. Otherwise,
+      see all the ways you can speak to our team below.
+    </p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="contact-auth-note" class="auth-note" style="display:none;">
+  Please <a href="waitlist.html">log in or sign up</a> first to send a message.
+</p>
+
+<div id="messages-section" style="display:none;">
+  <h2>Your Messages</h2>
+  <div id="messages-list"></div>
+</div>
+
+
+    <div class="info-cards">
+      <div class="card">
+        <h3>Existing Customers</h3>
+        <p>Already with us? Our team will help answer your questions.</p>
+        <a href="contact.html">Contact us →</a>
+      </div>
+      <div class="card">
+        <h3>New Users</h3>
+        <p>New here? Reach out to our onboarding team for help.</p>
+        <a href="contact.html">Contact us →</a>
+      </div>
+      <div class="card">
+        <h3>Business Inquiries</h3>
+        <p>Have a business-related query? We’ll connect you with a specialist.</p>
+        <a href="contact.html">Contact us →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
